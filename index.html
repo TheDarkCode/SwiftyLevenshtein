@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>SwiftyLevenshtein by TheDarkCode</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>SwiftyLevenshtein</h1>
+        <p>Levenshtein distance algorithm written in Swift 2.2. Both a slow and highly optimized version are included.</p>
+
+        <p class="view"><a href="https://github.com/TheDarkCode/SwiftyLevenshtein">View the Project on GitHub <small>TheDarkCode/SwiftyLevenshtein</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/TheDarkCode/SwiftyLevenshtein/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/TheDarkCode/SwiftyLevenshtein/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/TheDarkCode/SwiftyLevenshtein">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="swiftylevenshtein" class="anchor" href="#swiftylevenshtein" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SwiftyLevenshtein</h1>
+
+<p>Levenshtein distance algorithm written in Swift 2.2. Both a slow and highly optimized version are included.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-swift"><pre><span class="pl-k">var</span> source_string <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>x men<span class="pl-pds">"</span></span>
+<span class="pl-k">var</span> target_string <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>x mn<span class="pl-pds">"</span></span>
+
+
+source_string<span class="pl-k">.</span>getLevenshtein(target_string) <span class="pl-c">// 1</span>
+target_string<span class="pl-k">.</span>getLevenshtein(source_string) <span class="pl-c">// 1</span>
+
+<span class="pl-c">//source_string.getSlowLevenshtein(target_string) // 1</span>
+<span class="pl-c">//target_string.getSlowLevenshtein(source_string) // 1</span>
+
+<span class="pl-c">//levenshtein(source_string, target: target_string) // 1</span>
+
+<span class="pl-c">//slowlevenshtein(source_string, target: target_string) // 1</span></pre></div>
+
+<h2>
+<a id="cocoapods" class="anchor" href="#cocoapods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CocoaPods</h2>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. You can install it with the following command:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ gem install cocoapods</pre></div>
+
+<blockquote>
+<p>CocoaPods 0.39.0+ is required to build SwiftyLevenshtein 0.0.1+.</p>
+</blockquote>
+
+<p>To integrate SwiftyLevenshtein into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
+
+<div class="highlight highlight-source-ruby"><pre>source <span class="pl-s"><span class="pl-pds">'</span>https://github.com/CocoaPods/Specs.git<span class="pl-pds">'</span></span>
+platform <span class="pl-c1">:ios</span>, <span class="pl-s"><span class="pl-pds">'</span>8.0<span class="pl-pds">'</span></span>
+use_frameworks!
+
+pod <span class="pl-s"><span class="pl-pds">'</span>SwiftyLevenshtein<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>~&gt; 0.0.1<span class="pl-pds">'</span></span></pre></div>
+
+<p>Then, run the following command:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ pod install</pre></div>
+
+<h2>
+<a id="related-projects" class="anchor" href="#related-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Projects:</h2>
+
+<h3>
+<a id="example-swift-apps-by-mark-hamilton-dryverless" class="anchor" href="#example-swift-apps-by-mark-hamilton-dryverless" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example Swift Apps by Mark Hamilton, Dryverless</h3>
+
+<p>Collection of example applications written in Swift / Objective-C for iOS 9.x (developed under 9.2.1 SDK - will be migrated to 9.3 when released)</p>
+
+<h6>
+<a id="httpsgithubcomthedarkcodeexample-swift-apps" class="anchor" href="#httpsgithubcomthedarkcodeexample-swift-apps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/TheDarkCode/Example-Swift-Apps">https://github.com/TheDarkCode/Example-Swift-Apps</a>
+</h6>
+
+<h2>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support:</h2>
+
+<h5>
+<a id="send-any-questions-or-requests-to-supportdryverlesscom" class="anchor" href="#send-any-questions-or-requests-to-supportdryverlesscom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Send any questions or requests to: <a href="mailto:support@dryverless.com">support@dryverless.com</a>
+</h5>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ul>
+<li>1) Fork this repository!</li>
+<li>2) Create your feature branch: <code>git checkout -b Your-New-Feature</code>
+</li>
+<li>3) Commit your changes: <code>git commit -am 'Adding some super awesome update'</code>
+</li>
+<li>4) Push to the branch: <code>git push origin Your-New-Feature</code>
+</li>
+<li>5) Submit a pull request!</li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright (c) 2016 Mark Hamilton / dryverless (<a href="http://www.dryverless.com">http://www.dryverless.com</a>)</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/TheDarkCode">TheDarkCode</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
