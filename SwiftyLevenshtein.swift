@@ -137,10 +137,12 @@ public struct Array2D {
 
 public func slowlevenshtein(sourceString: String, target targetString: String) -> Int {
     
+    let targetLength = targetString.characters.count
+    let sourceLength = sourceString.characters.count
+    guard targetLength > 0 && sourceLength > 0 else { return max(targetLength, sourceLength) }
+    
     let source = Array(sourceString.unicodeScalars)
     let target = Array(targetString.unicodeScalars)
-    
-    let (sourceLength, targetLength) = (source.count, target.count)
     
     var matrix = Array(count: targetLength + 1, repeatedValue: Array(count: sourceLength + 1, repeatedValue: 0))
     
@@ -176,10 +178,12 @@ public func slowlevenshtein(sourceString: String, target targetString: String) -
 
 public func levenshtein(sourceString: String, target targetString: String) -> Int {
     
+    let targetLength = targetString.characters.count
+    let sourceLength = sourceString.characters.count
+    guard targetLength > 0 && sourceLength > 0 else { return max(targetLength, sourceLength) }
+    
     let source = Array(sourceString.unicodeScalars)
     let target = Array(targetString.unicodeScalars)
-    
-    let (sourceLength, targetLength) = (source.count, target.count)
     
     var distance = Array2D(columns: sourceLength + 1, rows: targetLength + 1)
     
