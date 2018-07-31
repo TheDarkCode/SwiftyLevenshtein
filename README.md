@@ -1,5 +1,5 @@
 # SwiftyLevenshtein
-Levenshtein distance algorithm written in Swift 2.2. Both a slow and highly optimized version are included.
+Levenshtein distance algorithm written in Swift 4. Both a slow and highly optimized version are included.
 
 ##Usage
 
@@ -36,7 +36,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'SwiftyLevenshtein', '~> 0.0.1'
+pod 'SwiftyLevenshtein', '~> 0.0.2'
 ```
 
 Then, run the following command:
