@@ -36,7 +36,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
+# Use this normal method for Swift 3 version
 pod 'SwiftyLevenshtein', '~> 0.0.1'
+
+# Use this waiting method for Swift 4 version
+# pod 'SwiftyLevenshtein', :git => 'https://github.com/TheDarkCode/SwiftyLevenshtein.git’
 ```
 
 Then, run the following command:
