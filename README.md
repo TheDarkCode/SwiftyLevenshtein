@@ -36,7 +36,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'SwiftyLevenshtein', '~> 0.0.2'
+pod 'SwiftyLevenshtein', '~> 0.0.1'
 ```
 
 Then, run the following command:
