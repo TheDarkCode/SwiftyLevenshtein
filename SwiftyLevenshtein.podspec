@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftyLevenshtein"
   s.version          = "0.0.4"
+  s.swift_version = '4.0'
   s.summary          = "Levenshtein distance algorithm written in Swift 4 Both a slow and highly optimized version are included."
   s.homepage         = "https://github.com/TheDarkCode/SwiftyLevenshtein"
   s.license          = 'MIT'
