@@ -1,7 +1,7 @@
 # SwiftyLevenshtein
 Levenshtein distance algorithm written in Swift 4. Both a slow and highly optimized version are included.
 
-##Usage
+## Usage
 
 ```swift
 var source_string = "x men"
@@ -19,7 +19,7 @@ target_string.getLevenshtein(source_string) // 1
 //slowlevenshtein(source_string, target: target_string) // 1
 ```
 
-##CocoaPods
+## CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
@@ -45,15 +45,15 @@ Then, run the following command:
 $ pod install
 ```
 
-##Related Projects:
+## Related Projects:
 
-###Example Swift Apps by Mark Hamilton, Dryverless
+### Example Swift Apps by Mark Hamilton, Dryverless
 Collection of example applications written in Swift / Objective-C for iOS 9.x (developed under 9.2.1 SDK - will be migrated to 9.3 when released)
-######https://github.com/TheDarkCode/Example-Swift-Apps
+###### https://github.com/TheDarkCode/Example-Swift-Apps
 
-##Support:
+## Support:
 
-#####Send any questions or requests to: support@dryverless.com
+##### Send any questions or requests to: support@dryverless.com
 
 ## Contributing
 
@@ -64,7 +64,7 @@ Collection of example applications written in Swift / Objective-C for iOS 9.x (d
   - 5) Submit a pull request!
 
 ## License
-Copyright (c) 2016 Mark Hamilton / dryverless (http://www.dryverless.com)
+Copyright (c) 2016-2018 Mark Hamilton / dryverless (http://www.dryverless.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
